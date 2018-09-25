@@ -1,0 +1,1 @@
+c:\Users\ignas\virtualenvs\iggycodes_env\Scripts\activate
