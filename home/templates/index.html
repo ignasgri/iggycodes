@@ -3,31 +3,154 @@
 {% block content %}
 
 
-
-<main>
+<section>
+<div class="intro_container">
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-            One of three columnsaaa
-            </div>
-            <div class="col-sm">
-            One of three columns
-            </div>
-            <div class="col-sm">
-            One of three columns
-            </div>
+    <div class="row">
+        <div class="col-sm-6 intro_text">
+                <h1>
+                IggyCodes Page is alive!!</h1>
+        <p class="lorum">
+        IggyCodes Page is alive!!>{% lorem how_many_paragraphs %}</p>
+        </div>
+        <div class="col-sm-6 intro_image">
+            <img class="intro_face" src="{% static "images/image.png" %}" alt="My image"/>
         </div>
     </div>
-</main>
+</div>
+</div>
+</section>
 
 <section>
-    <h1>IggyCodes Page is alive!!</h1>
-    <h1>Page is working and serving CSS and JavaScript</h1>
-    <h2>Bootstrap 4.0.0 is now working</h2>
-    <h3>JQuery is added and running version 3.3.1</h3>
-    <p>this is p text</p>
-    <p>This is image using static files{(%) static "images/image001.png" (%)}<img src="{% static "images/image001.png" %}" alt="My image"/></p>
-    {% comment %} <p><img src="{{ MEDIA_URL }}image001.png"/>Image from media folder added</p> {% endcomment %}
+    <h1 class="lesson_tag">Lessons</h1>
+    <div class="container">
+    
+
+    <div class="index_lessons">
+        
+        <div class="lesson_menu">
+                
+                        <div class="row">
+                          <div class="col-sm">
+                              <i class="fa fa-diamond fa-3x"></i>
+                              <div class="lesson_image"
+                              data-sal="slide-up"
+                              data-sal-delay="10"
+                              data-sal-duration="500"
+                              data-sal-easing="ease-out-bounce">
+                                  <p>html</p>
+                              </div>
+                          
+                                        
+                                     </div>
+                          <div class="col-sm">
+                                <i class="fa fa-pencil-square-o fa-3x"></i>
+                                <div class="lesson_image"
+                                data-sal="slide-up"
+                                data-sal-delay="50"
+                                data-sal-duration="600"
+                                data-sal-easing="ease-out-bounce">
+                                        <p>css</p>
+                                    </div>
+                                              </div>
+                          <div class="col-sm">
+                                <i class="fa fa-calendar fa-3x"></i>
+                                <div class="lesson_image"
+                                data-sal="slide-up"
+                                data-sal-delay="150"
+                                data-sal-duration="700"
+                                data-sal-easing="ease-out-bounce">
+                                        <p>sass</p>
+                                    </div>
+ 
+                            </div>
+                            <div class="col-sm">
+                                    <i class="fa fa-comments-o fa-3x"></i>
+                                    <div class="lesson_image"
+                                    data-sal="slide-up"
+                                    data-sal-delay="200"
+                                    data-sal-duration="800"
+                                    data-sal-easing="ease-out-bounce">
+                                            <p>boot</p>
+                                        </div>
+
+                                </div>
+                                <div class="col-sm">
+                                        <i class="fa fa-flag-o fa-3x"></i>
+                                        <div class="lesson_image"
+                                        data-sal-delay="250"
+                                        data-sal-duration="900"
+                                        data-sal="slide-up"
+                                        data-sal-easing="ease-out-bounce">
+                                                <p>php</p>
+                                            </div>
+
+                                    </div>
+                        </div>
+                      
+                    </div>
+</div>
+</div>
 </section>
+
+<section>
+    <div class="container">
+    <div class="box"></div>
+</div>
+</section>
+
+<section>
+        <h1 class="work_tag">Work</h1>
+    </section>
+
+    <footer>
+            
+            <div class="box">
+            <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                    <h6 class="text-center" style="padding-bottom: 10px;">ABOUT US</h6>
+                    <div class="col-sm"><ul style="text-align:left;">We provide the highest level of design and production for an ever-increasing client base. From corporate incentive programs and B2B forums to sports hospitality and product launches for 20 to 15,000+ guests, the One Plus Events team brings original and substantive content to every event.</ul></div>
+                    
+              </div>
+              <div class="col-sm">
+                    <div class="container">
+                            <h6 class="text-center" style="padding-bottom: 10px;">TWITTER</h6></div>
+                            <div class="row" style="border-left:1px solid #d6d6d6; border-right:1px solid #d6d6d6;">
+                              <div class="col-sm-1"><i class="fa fa-twitter fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
+                              <div class="col-sm-11"><ul style="text-align:left;">I liked a @YouTube video https://t.co/rWCNvS4Bzi Priscila tossan do The Voice cantando- A primeira vista</ul></div>
+                              <div class="w-100"></div>
+                              <div class="col-sm-1"><i class="fa fa-twitter fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
+                              <div class="col-sm-11"><ul style="text-align:left;">I liked a @YouTube video https://t.co/BhiY4omusN Priscila Tossan e Salomão Elias</ul></div>
+                              <div class="w-100"></div>
+                              <div class="col-sm-1"><i class="fa fa-twitter fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
+                              <div class="col-sm-11"><ul style="text-align:left;">Seascape meets fine dining. #corporateevents #corporatehospitality #miamicorporateevents #seainspired #tablescape… https://t.co/l89KDGFTU4</ul></div>
+                            </div>
+                    <!-- <div class="container">
+                        <h6>TWITTER</h6></div>
+                        
+                        <i class="fa fa-twitter" aria-hidden="true"></i><ul style="text-align:left;">I liked a @YouTube video https://t.co/rWCNvS4Bzi Priscila tossan do The Voice cantando- A primeira vista</ul>
+                        <i class="fa fa-twitter" aria-hidden="true"></i><ul style="text-align:left;">I liked a @YouTube video https://t.co/BhiY4omusN Priscila Tossan e Salomão Elias</ul>
+                        <i class="fa fa-twitter" aria-hidden="true"></i><ul style="text-align:left;">Seascape meets fine dining. #corporateevents #corporatehospitality #miamicorporateevents #seainspired #tablescape… https://t.co/l89KDGFTU4</ul> -->
+              </div>
+              <div class="col-sm">
+                    <div class="container">
+                            <h6 class="text-center" style="padding-bottom: 10px;">CONTACT US</h6></div>
+                            <div class="row">
+                              <div class="col-sm-1"><i class="fa fa-map-marker fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
+                              <div class="col-sm-11"><ul style="text-align:left; padding-bottom:10px;">O'Connell Street Lower, North City, Dublin 1</ul></div>
+                              <div class="w-100"></div>
+                              <div class="col-sm-1"><i class="fa fa-phone fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
+                              <div class="col-sm-11"><ul style="text-align:left; padding-bottom:10px;">+353 87 7433 324</ul></div>
+                              <div class="w-100"></div>
+                              <div class="col-sm-1"><i class="fa fa-envelope-o fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
+                              <div class="col-sm-11"><ul style="text-align:left;"> info@oneplusevents.com</ul></div>
+                            </div>
+                   </div>
+              </div>
+            </div>
+    </footer>
+
+
 
 {% endblock %}
