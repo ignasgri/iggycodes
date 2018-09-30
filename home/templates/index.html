@@ -11,7 +11,8 @@
                 <h1>
                 IggyCodes Page is alive!!</h1>
         <p class="lorum">
-        IggyCodes Page is alive!!>{% lorem how_many_paragraphs %}</p>
+        IggyCodes Page is alive!!>{% lorem how_many_paragraphs %}
+    <button class="get_in_touch_button">GET IN TOUCH</button></p>
         </div>
         <div class="col-sm-6 intro_image">
             <img class="intro_face" src="{% static "images/image.png" %}" alt="My image"/>
@@ -22,7 +23,9 @@
 </section>
 
 <section>
-    <h1 class="lesson_tag">Lessons</h1>
+    <div class="lessons_box">
+    <h1 class="lesson_" id="lessons">Lessons</h1>
+</div>
     <div class="container">
     
 
@@ -93,6 +96,19 @@
 </div>
 </section>
 
+
+<section>
+        <div class="container">
+        <div class="box"></div>
+    </div>
+    </section>
+    
+    <section>
+        <div class="lessons_box">
+            <h1 class="work_ta loeson_" id="experience">experience</h1>
+        </div>
+        </section>
+
 <section>
     <div class="container">
     <div class="box"></div>
@@ -100,7 +116,9 @@
 </section>
 
 <section>
-        <h1 class="work_tag">Work</h1>
+        <div class="lessons_box">
+        <h1 class="work_ta" id="contacts">Contact me</h1>
+        </div>
     </section>
 
     <footer>
@@ -109,23 +127,20 @@
             <div class="container">
             <div class="row">
               <div class="col-sm">
-                    <h6 class="text-center" style="padding-bottom: 10px;">ABOUT US</h6>
-                    <div class="col-sm"><ul style="text-align:left;">We provide the highest level of design and production for an ever-increasing client base. From corporate incentive programs and B2B forums to sports hospitality and product launches for 20 to 15,000+ guests, the One Plus Events team brings original and substantive content to every event.</ul></div>
+                    <h6 class="text-center footer_tabs">ABOUT US</h6>
+                    <div class="col-sm footer_p"><ul style="text-align:left;">We provide the highest level of design and production for an ever-increasing client base. From corporate incentive programs and B2B forums to sports hospitality and product launches for 20 to 15,000+ guests, the One Plus Events team brings original and substantive content to every event.</ul></div>
                     
               </div>
               <div class="col-sm">
                     <div class="container">
-                            <h6 class="text-center" style="padding-bottom: 10px;">TWITTER</h6></div>
+                            <h6 class="text-center footer_tabs">TWITTER</h6></div>
                             <div class="row" style="border-left:1px solid #d6d6d6; border-right:1px solid #d6d6d6;">
                               <div class="col-sm-1"><i class="fa fa-twitter fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
-                              <div class="col-sm-11"><ul style="text-align:left;">I liked a @YouTube video https://t.co/rWCNvS4Bzi Priscila tossan do The Voice cantando- A primeira vista</ul></div>
+                              <div class="col-sm-11 footer_p"><ul style="text-align:left;">I liked a @YouTube video https://t.co/rWCNvS4Bzi Priscila tossan do The Voice cantando- A primeira vista</ul></div>
                               <div class="w-100"></div>
                               <div class="col-sm-1"><i class="fa fa-twitter fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
-                              <div class="col-sm-11"><ul style="text-align:left;">I liked a @YouTube video https://t.co/BhiY4omusN Priscila Tossan e Salomão Elias</ul></div>
-                              <div class="w-100"></div>
-                              <div class="col-sm-1"><i class="fa fa-twitter fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
-                              <div class="col-sm-11"><ul style="text-align:left;">Seascape meets fine dining. #corporateevents #corporatehospitality #miamicorporateevents #seainspired #tablescape… https://t.co/l89KDGFTU4</ul></div>
-                            </div>
+                              <div class="col-sm-11 footer_p"><ul style="text-align:left;">I liked a @YouTube video https://t.co/BhiY4omusN Priscila Tossan e Salomão Elias</ul></div>
+                              </div>
                     <!-- <div class="container">
                         <h6>TWITTER</h6></div>
                         
@@ -135,22 +150,30 @@
               </div>
               <div class="col-sm">
                     <div class="container">
-                            <h6 class="text-center" style="padding-bottom: 10px;">CONTACT US</h6></div>
+                            <h6 class="text-center footer_tabs">CONTACT US</h6></div>
                             <div class="row">
                               <div class="col-sm-1"><i class="fa fa-map-marker fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
-                              <div class="col-sm-11"><ul style="text-align:left; padding-bottom:10px;">O'Connell Street Lower, North City, Dublin 1</ul></div>
+                              <div class="col-sm-11 footer_p"><ul style="text-align:left; padding-bottom:10px;">O'Connell Street Lower, North City, Dublin 1</ul></div>
                               <div class="w-100"></div>
                               <div class="col-sm-1"><i class="fa fa-phone fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
-                              <div class="col-sm-11"><ul style="text-align:left; padding-bottom:10px;">+353 87 7433 324</ul></div>
+                              <div class="col-sm-11 footer_p"><ul style="text-align:left; padding-bottom:10px;">+353 87 7433 324</ul></div>
                               <div class="w-100"></div>
                               <div class="col-sm-1"><i class="fa fa-envelope-o fa-2x" style="color:#a0dbbe;" aria-hidden="true"></i></div>
-                              <div class="col-sm-11"><ul style="text-align:left;"> info@oneplusevents.com</ul></div>
+                              <div class="col-sm-11"><ul class="footer_p"> contact@iggycodes.com</ul></div>
                             </div>
                    </div>
               </div>
             </div>
     </footer>
 
-
-
+    <script rel="stylesheet" src="{% static 'js/fitty.min.js' %}"></script>
+    <script>
+            fitty('#lessons');
+            </script>
+            <script>
+                    fitty('#experience');
+                    </script>
+                    <script>
+                            fitty('#contacts');
+                            </script>
 {% endblock %}

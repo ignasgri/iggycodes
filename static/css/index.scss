@@ -25,16 +25,20 @@ nav{
     padding: 50px;
     margin: auto;
     text-align: center;
+    
     .lorum{
-        top: 30%;
+        border: 1px solid #524348;
+        padding: 20px;
+        top: 20%;
         position: relative;
         color: #524348
     }
     h1{
-        top: 30%;
+        top: 20%;
         position: relative;
         color: #a57141;
         text-transform: uppercase;
+        font-weight: 800;
     }
     
 
@@ -46,13 +50,56 @@ nav{
         max-height: 600px;
         margin: auto;
         z-index: 2;
-
     }
 
+}
+.get_in_touch_button{
+background-color: none;
+padding: 10px;
+}
+.lessons_box{
+    width: 100%;
+    height: 200px;
 }
 .index_lessons{
     height: 300px;
     padding: 50px;
+}
+#lessons{
+    overflow: hidden;
+    text-align: center;
+    // font-size: 320px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    font-weight: 1000;
+    line-height: 0.7;
+    z-index: -1;
+    color: rgb(250, 210, 182);
+}
+#experience{
+    overflow: hidden;
+    text-align: center;
+    // font-size: 320px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    font-weight: 1000;
+    line-height: 0.7;
+    z-index: -1;
+    color: rgb(250, 210, 182);
+}
+#contacts{
+    overflow: hidden;
+    text-align: center;
+    // font-size: 320px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    font-weight: 1000;
+    line-height: 0.7;
+    z-index: -1;
+    color: rgb(250, 210, 182);
 }
 .lesson_menu{
     height: 100px;
@@ -102,7 +149,7 @@ nav{
     }
 
 .box{
-    height: 300px;
+    height: 200px;
     background-color: $bgcolor;
 }
     .work_tag{
@@ -110,7 +157,7 @@ nav{
         height: 200px;
         overflow: hidden;
         text-align: center;
-        font-size: 320px;
+        font-size: 270px;
         text-transform: uppercase;
         text-align: center;
         margin: auto;
@@ -118,8 +165,16 @@ nav{
         line-height: 0.7;
         z-index: -1;
         color: rgb(250, 210, 182);
+        // letter-spacing: 1.1;
     
     }
 footer{
     color: $text_color;
-}
+    .footer_tabs{
+        padding: 20px;
+        text-transform: uppercase;}
+        ul{
+            font-size: 12px;
+            text-align:left; 
+            padding-bottom:10px;
+    }}

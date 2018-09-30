@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'home',
     'accounts',
     'blog',
+    'contacts',
     'shop_cart',
     'shop_categories',
     'shop_payments',
@@ -118,7 +119,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailAuth'
+]
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -164,8 +168,24 @@ STATICFILES_DIRS= (
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+#console
+# EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend' 
+# DEFAULT_FROM_EMAIL='testing@example.com'
+# EMAIL_HOST_USER=''
+# EMAIL_HOST_PASSWORD=''
+# EMAIL_USE_TLS=False 
+# EMAIL_PORT=1025
 
 #ONLY FOR PRODUCTION ----- ONLY FOR PRODUCTION ----- ONLY FOR PRODUCTION
+
+
+
+#gmail
+# EMAIL_USE_TLS = True       
+# EMAIL_HOST = 'smtp.gmail.com'      
+# EMAIL_PORT = 587     
+# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')     
+# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 # DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
 # AWS_HEADERS = {  # see http://developer.yahoo.com/performance/rules.html#expires

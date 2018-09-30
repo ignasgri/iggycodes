@@ -2,6 +2,31 @@ html, body{
     font-family: 'Roboto', sans-serif!important;
     
 }
+.navbar-brand{
+    font-weight: 800;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 1px solid rgb(0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    width: 150px;
+    animation: 
+      typing 1s steps(10, end),
+      blink-caret .60s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 150px }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    0% { border-color: rgb(0, 0, 0); }
+    50% { border-color: rgb(0, 0, 0); border-color: transparent}
+  }
+
 .username{
     text-transform: uppercase;
 }

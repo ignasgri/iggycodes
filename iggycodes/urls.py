@@ -17,6 +17,7 @@ from shop_payments import urls as shop_payments_urls
 from shop_products import urls as shop_products_urls
 from shop_products import views as shop_product_views
 from blog.views import post_list
+from contacts.views import contacts
 from django.conf import settings
 from search import urls as search_urls
 
@@ -40,6 +41,7 @@ urlpatterns = [
     url(r'^shop/payments/', include(shop_payments_urls)),
     url(r'^shop/products/', include(shop_products_urls)),
     url(r'^search/', include(search_urls)),
+    url(r'^contacts/', contacts, name='contacts'),
 
 ]
 if settings.DEBUG:
