@@ -1,16 +1,17 @@
-{% extends 'base.html' %}
-{% load bootstrap_tags %}
 
-{% block content %}
+{% load bootstrap_tags %}
+{% block contact %}
+
+<div class="container">
 <div class="row">
-        <div class="col-sm-12 contactform">
-            <h1> Contact Form </h1>
+        <div class="col-sm-6 contactform">
             <form role="form" action="{% url 'contacts' %}" method="POST">
                 {% csrf_token %}
                 {{ form | as_bootstrap }}
                 <button class="btn btn-lg btn-success" type="submit">Submit</button>
             </form>
         </div>
+        <div class="col-sm-6 contactform"></div>
 </div>
-
-{% endblock %}
+</div>
+{% endblock contact %}

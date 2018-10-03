@@ -20,6 +20,7 @@ nav{
         color:black!important;
     }
 }
+
 .intro_text{
     height: 500px;
     padding: 50px;
@@ -31,7 +32,8 @@ nav{
         padding: 20px;
         top: 20%;
         position: relative;
-        color: #524348
+        color: #524348;
+        
     }
     h1{
         top: 20%;
@@ -54,12 +56,15 @@ nav{
 
 }
 .get_in_touch_button{
-background-color: none;
-padding: 10px;
+background-color: transparent;
+border: 3px solid #d44848;
+padding: 15px;
+color: #d44848;
+// border-radius: 2px;
 }
 .lessons_box{
     width: 100%;
-    height: 200px;
+    // height: 200px;
 }
 .index_lessons{
     height: 300px;
@@ -149,8 +154,9 @@ padding: 10px;
     }
 
 .box{
-    height: 200px;
+    // height: 200px;
     background-color: $bgcolor;
+    margin-top: -10px;
 }
     .work_tag{
         width: 100%;
