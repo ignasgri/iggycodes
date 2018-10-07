@@ -1,0 +1,92 @@
+
+{% load staticfiles %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+crossorigin="anonymous">
+<link rel="stylesheet" href="{% static "css/index.css" %}">
+<link rel="stylesheet" href="{% static "css/gallery.css" %}">
+</head>
+<body>
+    
+
+
+
+
+
+        <h1>Isotope - filtering</h1>
+        
+        <div class="button-group filters-button-group">
+          <button class="button is-checked" data-filter="*">show all</button>
+          <button class="button" data-filter=".macro">macro</button>
+          <button class="button" data-filter=".aerial">aerial</button>
+          <!-- <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button> -->
+          <!-- <button class="button" data-filter=":not(.transition)">not transition</button>
+          <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+          <button class="button" data-filter="numberGreaterThan50">number > 50</button>
+          <button class="button" data-filter="ium">name ends with &ndash;ium</button> -->
+        </div>
+
+
+        <!-- <div class="col-sm-12"> -->
+                
+        <div class="grid">
+                {% for photo in photo %}
+          <div class="element-item transition {{photo.categories_list}} " data-category="transition">
+                <!-- <div class="element-item transition metal " data-category="{{photo.categories_list}}"> -->
+                        <img src="{{ MEDIA_URL }}{{ photo.image }}" style="width:100px;">
+            <h3 class="name">Mercury</h3>
+            <p class="symbol">Hg</p>
+            <p class="number">{{photo.id}}</p>
+            <p class="weight">200.59</p>
+          </div>
+           {% endfor %}   
+        </div>
+          
+     
+    <!-- </div> -->
+    
+    
+    <div class="pagination col-sm-12">
+        <span class="step-links">
+            {% if products.has_previous %}
+            <a href="?page={{ products.previous_page_number }}" class="post-meta"><i class="fa fa-angle-left fa-lg right-arrow" aria-hidden="true"></i></i></a>
+            {% endif %}
+            <span class="current">Page <span style="font-weight:900; font-size:20px"></span>of <span style="font-weight:900; font-size:20px"> {{ products.paginator.num_pages }}</span></span>
+            {% if products.has_next %}
+            <a href="?page={{ products.next_page_number }}" class="post-meta"><i class="fa fa-angle-right fa-lg left-arrow" aria-hidden="true"></i></a>
+            {% endif %}
+        </span>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- <script rel="stylesheet" src="{% static 'js/controls.js' %}"></script> -->
+    <script rel="stylesheet" src="{% static 'js/filter.js' %}"></script>
+    <!-- <script>
+            $(function() {
+              var f = $('.filtr-container').filterizr({ controlsSelector: '.fltr-controls' });
+              $('.color-container-1').filterizr({ controlsSelector: '.color-controls-1' });
+              $('.color-container-2').filterizr({ controlsSelector: '.color-controls-2', layout: 'packed' });
+              $('.color-container-3').filterizr({ controlsSelector: '.color-controls-3', layout: 'sameHeight' });
+              $('.color-container-4').filterizr({ controlsSelector: '.color-controls-4', layout: 'packed' });
+              $('.color-container-5').filterizr({ controlsSelector: '.color-controls-5', layout: 'horizontal' });
+              $('.color-container-6').filterizr({ controlsSelector: '.color-controls-6', layout: 'vertical' });
+              window.filterizr = f;
+            });
+          </script>   -->
+    <!-- <script rel="stylesheet" src="{% static 'js/jquery.filterizr-with-jquery.min.js' %}"></script>
+    <script rel="stylesheet" src="{% static 'js/filter.js' %}"></script> -->
+    {% endblock %}
+</body>
+</html>

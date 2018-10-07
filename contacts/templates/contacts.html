@@ -4,8 +4,8 @@
 
 <div class="container">
 <div class="row">
-        <div class="col-sm-6 contactform">
-            <form role="form" action="{% url 'contacts' %}" method="POST">
+        <div class="col-sm-12 contactform">
+            <form class="contact_container" role="form" action="{% url 'contacts' %}" method="POST">
                 {% csrf_token %}
                 {{ form | as_bootstrap }}
                 <button class="btn btn-lg btn-success" type="submit">Submit</button>

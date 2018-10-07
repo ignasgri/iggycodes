@@ -1,5 +1,6 @@
 /* RGB */
 .intro_container {
+  height: 100vh;
   background-color: #fad2b6 !important;
 }
 
@@ -78,6 +79,7 @@ nav .nav-link {
 }
 
 #experience {
+  padding-top: 190px;
   overflow: hidden;
   text-align: center;
   text-transform: uppercase;
@@ -99,6 +101,50 @@ nav .nav-link {
   line-height: 0.7;
   z-index: -1;
   color: #fad2b6;
+}
+
+.contact_container {
+  max-width: 90%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+#id_contact_name, #id_contact_email {
+  font-size: 30px;
+  color: gray;
+  height: 60px;
+  background-color: #C7AC92;
+  border: none;
+}
+
+#id_content {
+  font-size: 30px;
+  color: gray;
+  height: 200px;
+  background-color: #C7AC92;
+  border: none;
+}
+
+#id_contact_name::-webkit-input-placeholder {
+  font-size: 30px;
+  color: gray;
+  font-weight: 700;
+}
+
+#id_contact_email::-webkit-input-placeholder {
+  font-size: 30px;
+  color: gray;
+  font-weight: 700;
+}
+
+#id_content::-webkit-input-placeholder {
+  font-size: 30px;
+  color: gray;
+  font-weight: 700;
+}
+
+.control-label {
+  visibility: hidden;
 }
 
 .lesson_menu {
@@ -154,6 +200,10 @@ nav .nav-link {
   transition: 0.3s ease-in;
 }
 
+.Macro {
+  height: 100px;
+}
+
 .box {
   background-color: #fad2b6;
   margin-top: -10px;
@@ -187,5 +237,76 @@ footer ul {
   font-size: 12px;
   text-align: left;
   padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+.color-charcoal {
+  color: #524348;
+  margin-bottom: 30px;
+}
+
+.color-charcoal .font-bold {
+  font-weight: 700;
+}
+
+.padding-y-sm-6x {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.margin-bottom-md-1x {
+  margin-bottom: 1rem;
+}
+
+#htmlbar {
+  margin: 20px 0;
+  height: 40px;
+}
+
+#cssbar {
+  margin: 20px 0;
+  height: 40px;
+}
+
+#jsbar {
+  margin: 20px 0;
+  height: 40px;
+}
+
+#pythonbar {
+  margin: 20px 0;
+  height: 40px;
+}
+
+.filterizr__controls li {
+  background-color: #bbb;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.filterizr__controls li.active {
+  background-color: blue;
+}
+
+.filterizr__elements figure {
+  padding: 1rem;
+}
+
+.filterizr__elements figure figcaption {
+  color: white;
+  position: absolute;
+  text-transform: uppercase;
+  padding: 1rem;
+  z-index: 1;
+  bottom: 1rem;
 }
 /*# sourceMappingURL=index.css.map */

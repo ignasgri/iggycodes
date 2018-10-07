@@ -9,6 +9,7 @@ $color5: rgba(237, 237, 244, 1);
 $text_color: #524348;
 
 .intro_container{
+    height: 100vh;
     background-color: $bgcolor!important;
 }
 nav{
@@ -83,6 +84,7 @@ color: #d44848;
     color: rgb(250, 210, 182);
 }
 #experience{
+    padding-top: 190px;
     overflow: hidden;
     text-align: center;
     // font-size: 320px;
@@ -105,6 +107,50 @@ color: #d44848;
     line-height: 0.7;
     z-index: -1;
     color: rgb(250, 210, 182);
+}
+.contact_container{
+    max-width: 90%;
+    margin: auto;
+    padding-top: 3rem;
+}
+#id_contact_name, #id_contact_email{
+    font-size: 30px;
+    color: gray;
+    height: 60px;
+    background-color: #C7AC92;
+    border: none;
+
+}
+#id_content{
+    font-size: 30px;
+    color: gray;
+    height: 200px;
+    background-color: #C7AC92;
+    border: none;
+
+}
+// #div_id_contact_name, #div_id_contact_email{
+//     font-size: 40px;
+//     color: white;
+//     font-weight: 700;
+// }
+#id_contact_name::-webkit-input-placeholder{
+    font-size: 30px;
+    color: gray;
+    font-weight: 700;
+}
+#id_contact_email::-webkit-input-placeholder{
+    font-size: 30px;
+    color: gray;
+    font-weight: 700;
+}
+#id_content::-webkit-input-placeholder{
+    font-size: 30px;
+    color: gray;
+    font-weight: 700;
+}
+.control-label{
+    visibility: hidden
 }
 .lesson_menu{
     height: 100px;
@@ -152,7 +198,9 @@ color: #d44848;
         transition: 0.3s ease-in;
     }
     }
-
+.Macro{
+    height: 100px;
+}
 .box{
     // height: 200px;
     background-color: $bgcolor;
@@ -184,3 +232,71 @@ footer{
             text-align:left; 
             padding-bottom:10px;
     }}
+    h4{
+        font-size: 2.4rem;
+    }
+            .color-charcoal{
+            color: #524348;
+            margin-bottom: 30px;
+                .font-bold{
+                font-weight: 700;
+        }
+    }
+    .padding-y-sm-6x{
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .margin-bottom-md-1x{
+        margin-bottom: 1rem;
+    }
+    #htmlbar {
+        margin: 20px 0;
+        // width: 400px;
+        height: 40px;
+      }
+        #cssbar{
+        margin: 20px 0;
+        // width: 400px;
+        height: 40px;
+      }
+      #jsbar{
+        margin: 20px 0;
+        // width: 400px;
+        height: 40px;
+      }
+      #pythonbar {
+        margin: 20px 0;
+        // width: 400px;
+        height: 40px;
+      }
+
+
+      .filterizr__controls {
+        li {
+            background-color: #bbb;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            transition: all 200ms;
+        cursor: pointer;
+            &.active {
+                background-color: blue;
+            }
+        }
+    }
+    
+    .filterizr__elements {
+        figure {
+            padding: 1rem;
+            figcaption {
+                color: white;
+                position: absolute;
+                text-transform: uppercase;
+                padding: 1rem;
+                z-index: 1;
+                bottom: 1rem;
+            }
+        }
+    }

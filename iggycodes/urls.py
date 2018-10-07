@@ -18,6 +18,7 @@ from shop_products import urls as shop_products_urls
 from shop_products import views as shop_product_views
 from blog.views import post_list
 from contacts.views import contacts
+from gallery.views import gallery
 from django.conf import settings
 from search import urls as search_urls
 
@@ -42,6 +43,7 @@ urlpatterns = [
     url(r'^shop/products/', include(shop_products_urls)),
     url(r'^search/', include(search_urls)),
     url(r'^contacts/', contacts, name='contacts'),
+    url(r'^gallery/', gallery, name='gallery'),
 
 ]
 if settings.DEBUG:

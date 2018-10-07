@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'home',
     'accounts',
     'blog',
+    'gallery',
     'contacts',
     'shop_cart',
     'shop_categories',

@@ -1,10 +1,10 @@
-var fitties = fitty('#lessons');
+// var fitties = fitty('#lessons');
 
-// get element reference of first fitty
-var myFittyElement = fitties[0].element;
+// // get element reference of first fitty
+// var myFittyElement = fitties[0].element;
 
-// force refit
-fitties[0].fit();
+// // force refit
+// fitties[0].fit();
 
 var fitties2 = fitty('#experience');
 
@@ -22,7 +22,7 @@ var myFittyElement = fitties3[0].element;
 // force refit
 fitties3[0].fit();
 
-fitty('#lessons',{
+fitty('#experience',{
     minSize: 20,
     maxSize: 400,
     multiLine: false,
