@@ -11,14 +11,14 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def gallery(request):
     photo = Photo.objects.filter(published_date__lte=timezone.now()
         ).order_by('-published_date')[0:999]
-    paginator = Paginator(photo, 8)
-    page = request.GET.get('page')
-    try:
-        photo = paginator.page(page)
-    except PageNotAnInteger:
-        photo = paginator.page(1)
-    except EmptyPage:
-        prhoto = paginator.page(paginator.num_pages)
+    # paginator = Paginator(photo, 8)
+    # page = request.GET.get('page')
+    # try:
+    #     photo = paginator.page(page)
+    # except PageNotAnInteger:
+    #     photo = paginator.page(1)
+    # except EmptyPage:
+    #     prhoto = paginator.page(paginator.num_pages)
     args = {}
     args.update(csrf(request))
     return render(request, "gallery.html", {"photo": photo}, args)

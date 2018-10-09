@@ -12,8 +12,8 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
 crossorigin="anonymous">
-<link rel="stylesheet" href="{% static "css/index.css" %}">
-<link rel="stylesheet" href="{% static "css/gallery.css" %}">
+<!-- <link rel="stylesheet" href="{% static "css/image_grid.css" %}"> -->
+<link rel="stylesheet" href="{% static "css/image_filltering.css" %}">
 </head>
 <body>
     
@@ -23,11 +23,23 @@ crossorigin="anonymous">
 
 
         <h1>Isotope - filtering</h1>
+        <img class="" src="{% static "images/macro.png" %}" style="width:50px" alt="My image"/>
+        <img class="" src="{% static "images/drone.png" %}" style="width:50px" alt="My image"/>
+        <img class="" src="{% static "images/architecture.png" %}" style="width:50px" alt="My image"/>
+        <img class="" src="{% static "images/landscape.png" %}" style="width:50px" alt="My image"/>
+        <img class="" src="{% static "images/portrait.png" %}" style="width:50px" alt="My image"/>
+        <img class="" src="{% static "images/sports.png" %}" style="width:50px" alt="My image"/>
+        <img class="" src="{% static "images/street.png" %}" style="width:50px" alt="My image"/>
+        <img class="" src="{% static "images/wildlife.png" %}" style="width:50px" alt="My image"/>
         
+        
+
+
+
         <div class="button-group filters-button-group">
           <button class="button is-checked" data-filter="*">show all</button>
-          <button class="button" data-filter=".macro">macro</button>
-          <button class="button" data-filter=".aerial">aerial</button>
+          <button class="" data-filter=".macro"><img class="" src="{% static "images/macro.png" %}" style="width:50px" alt="My image"/></button>
+          <button class="" data-filter=".aerial"><img class="" src="{% static "images/drone.png" %}" style="width:50px" alt="My image"/></button>
           <!-- <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button> -->
           <!-- <button class="button" data-filter=":not(.transition)">not transition</button>
           <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
@@ -38,20 +50,20 @@ crossorigin="anonymous">
 
         <!-- <div class="col-sm-12"> -->
                 
+
         <div class="grid">
                 {% for photo in photo %}
+                <div class="grid-sizer"></div>
+                <div class="grid-item">
           <div class="element-item transition {{photo.categories_list}} " data-category="transition">
-                <!-- <div class="element-item transition metal " data-category="{{photo.categories_list}}"> -->
-                        <img src="{{ MEDIA_URL }}{{ photo.image }}" style="width:100px;">
-            <h3 class="name">Mercury</h3>
-            <p class="symbol">Hg</p>
-            <p class="number">{{photo.id}}</p>
-            <p class="weight">200.59</p>
-          </div>
+                        <img src="{{ MEDIA_URL }}{{ photo.image }}">
+            
+          </div></div>
+          
            {% endfor %}   
         </div>
           
-     
+      
     <!-- </div> -->
     
     
@@ -70,9 +82,16 @@ crossorigin="anonymous">
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
+    
+    
+    
+  
+    <!-- <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script> -->
+    <!-- <script rel="stylesheet" src="{% static 'js/image_grid.js' %}"></script> -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script rel="stylesheet" src="{% static 'js/image_filltering.js' %}"></script>
     <!-- <script rel="stylesheet" src="{% static 'js/controls.js' %}"></script> -->
-    <script rel="stylesheet" src="{% static 'js/filter.js' %}"></script>
     <!-- <script>
             $(function() {
               var f = $('.filtr-container').filterizr({ controlsSelector: '.fltr-controls' });

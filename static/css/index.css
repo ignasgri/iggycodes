@@ -281,32 +281,5 @@ h4 {
   height: 40px;
 }
 
-.filterizr__controls li {
-  background-color: #bbb;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 1rem 2rem;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
-  cursor: pointer;
-}
 
-.filterizr__controls li.active {
-  background-color: blue;
-}
-
-.filterizr__elements figure {
-  padding: 1rem;
-}
-
-.filterizr__elements figure figcaption {
-  color: white;
-  position: absolute;
-  text-transform: uppercase;
-  padding: 1rem;
-  z-index: 1;
-  bottom: 1rem;
-}
 /*# sourceMappingURL=index.css.map */
