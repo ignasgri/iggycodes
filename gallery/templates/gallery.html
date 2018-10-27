@@ -13,25 +13,330 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
 crossorigin="anonymous">
 <!-- <link rel="stylesheet" href="{% static "css/image_grid.css" %}"> -->
+<link rel="stylesheet" href="{% static "css/gallery.css" %}">
 <link rel="stylesheet" href="{% static "css/image_filltering.css" %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.0/shuffle.min.js">
 </head>
 <body>
-    
+    <div class="container mt-3">
+        <h1 class="mb-3">Bootstrap 4 grid and filters with&#32;<a href="https://vestride.github.io/Shuffle/" target="_blank" rel="noopener">Shuffle</a></h1>
+        <div class="row">
+          <div class="col">
+            <p class="mb-1">Filters:</p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-outline-primary active">
+                <input type="radio" name="shuffle-filter" value="all" checked="checked"/>All
+              </label>
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="shuffle-filter" value="nature"/>Nature
+              </label>
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="shuffle-filter" value="fruit"/>Fruit
+              </label>
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="shuffle-filter" value="architecture"/>Architecture
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row my-shuffle">
+          <figure class="image-item col-3" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1494249465471-5655b7878482?ixlib=rb-0.3.5&s=997116405ede44d63ddc54f16e2db8ce&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1484402628941-0bb40fc029e7?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=6237e62a10fa079d99b088b0db0144ac" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/uploads/1413142095961484763cf/d141726c?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=86dc2dcb74588b338dfbb15d959c5037" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;architecture&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1465414829459-d228b58caf6e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=7ab1744fe016fb39feb2972244246359" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;nature,architecture&quot;,&quot;architecture&quot;]">
+            <div class="aspect aspect--4x3">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1416184008836-5486f3e2cf58?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=601&amp;h=676&amp;fit=crop&amp;s=5f1f1ffba05979d4248cc16d8eb82f0a" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1478033394151-c931d5a4bdd6?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=57a00aabcfaa1b04fd268ea3ad4a4cbb" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-6" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--32x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1473175494278-d83ed8459089?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1208&amp;h=338&amp;fit=crop&amp;s=fd1cf1e8eddf88ef87015314f85ce3fb" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1434144893279-2a9fc14e9337?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=d2f930bbb91de7e19e6436f5b03897b0" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;fruit&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1464454709131-ffd692591ee5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=eda14f45e94e9024f854b1e06708c629" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=70dabb0dcc604c558245b72f3109bbbb" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1447433589675-4aaa569f3e05?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=4e19022724205e38e491961f50e47d32" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-3" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1430026996702-608b84ce9281?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=363a88755a7b87635641969a8d66f7aa" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-md-6 col-sm-12" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--32x9">
+              <div class="aspect__inner"><img src="https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg?auto=compress&cs=tinysrgb&h=350" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-6" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--1x1">
+              <div class="aspect__inner"><img src=" http://blog.ink361.com/wp-content/uploads/2015/02/jcgolfing.jpg" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-md-3 col-sm-6" data-groups="[&quot;fruit&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1464454709131-ffd692591ee5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=eda14f45e94e9024f854b1e06708c629" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-md-3 col-sm-6" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=70dabb0dcc604c558245b72f3109bbbb" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-md-3 col-sm-6" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1447433589675-4aaa569f3e05?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=4e19022724205e38e491961f50e47d32" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-md-3 col-sm-6" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1494249465471-5655b7878482?ixlib=rb-0.3.5&s=997116405ede44d63ddc54f16e2db8ce&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-md-3 col-sm-6" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/photo-1484402628941-0bb40fc029e7?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=6237e62a10fa079d99b088b0db0144ac" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
+          <figure class="image-item col-md-3 col-sm-6" data-groups="[&quot;nature&quot;]">
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner"><img src="https://images.unsplash.com/uploads/1413142095961484763cf/d141726c?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=86dc2dcb74588b338dfbb15d959c5037" obj.alt="obj.alt"/></div>
+            </div>
+          </figure>
 
 
+          
+          <div class="col-1 my-sizer-element"></div>
+        </div>
+      </div>
 
-
-
-        <h1>Isotope - filtering</h1>
-        <img class="" src="{% static "images/macro.png" %}" style="width:50px" alt="My image"/>
-        <img class="" src="{% static "images/drone.png" %}" style="width:50px" alt="My image"/>
-        <img class="" src="{% static "images/architecture.png" %}" style="width:50px" alt="My image"/>
-        <img class="" src="{% static "images/landscape.png" %}" style="width:50px" alt="My image"/>
-        <img class="" src="{% static "images/portrait.png" %}" style="width:50px" alt="My image"/>
-        <img class="" src="{% static "images/sports.png" %}" style="width:50px" alt="My image"/>
-        <img class="" src="{% static "images/street.png" %}" style="width:50px" alt="My image"/>
-        <img class="" src="{% static "images/wildlife.png" %}" style="width:50px" alt="My image"/>
+    <div class="container">
         
+            <div class="row text-center">
+                <div class="col-md-12 text-center pb20">
+                    <h2>Take a Look at
+                        <br>
+                        <strong>Some of Our Work</strong>
+                    </h2>
+                    <p class="lead">Wide range of
+                        <span class="color">successful</span> digital and print projects.</p>
+                </div>
+        
+        
+                <div class="col-md-12">
+                    <div class="col">
+                        <div class="btn-group vossen-portfolio-filters" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="shuffle-filter" value="all" checked="checked" />All</label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="shuffle-filter" value="nature" />Nature</label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="shuffle-filter" value="fruit" />Fruit</label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="shuffle-filter" value="architecture" />Architecture</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-shuffle">
+        
+                    <!-- Portfolio Item -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 image-item" data-groups="[&quot;nature&quot;]">
+        
+                        <div class="portfolio-item">
+                            <div class="item-caption">
+                                <h4>Wunderkind</h4>
+                                <p>Branding</p>
+                            </div>
+                            <div class="item-image">
+                                <img alt="#" src="https://images.unsplash.com/uploads/141310026617203b5980d/c86b8baa?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=882e851a008e83b7a80d05bdc96aa817"
+                                    obj.alt="obj.alt" />
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Portfolio Item -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 image-item" data-groups="[&quot;nature&quot;]">
+        
+                        <div class="portfolio-item">
+                            <div class="item-caption">
+                                <h4>iWatch App</h4>
+                                <p>Digital</p>
+                            </div>
+                            <div class="item-image">
+                                <img alt="#" src="https://images.unsplash.com/photo-1484402628941-0bb40fc029e7?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=6237e62a10fa079d99b088b0db0144ac"
+                                    obj.alt="obj.alt" />
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- Portfolio Item -->
+                    <div class="col-lg-4 col-md-4 col-sm-12 image-item" data-groups="[&quot;nature&quot;]">
+        
+                        <div class="portfolio-item">
+                            <div class="item-caption">
+                                <h4>Wunder Hero</h4>
+                                <p>Branding</p>
+                            </div>
+                            <div class="item-image">
+                                <img alt="#" src="https://images.unsplash.com/uploads/1413142095961484763cf/d141726c?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=86dc2dcb74588b338dfbb15d959c5037"
+                                    obj.alt="obj.alt" />
+                            </div>
+                        </div>
+        
+                    </div>
+                    <!-- Portfolio Item -->
+                    <div class="col-md-8 col-sm-6 image-item" data-groups="[&quot;architecture&quot;]">
+        
+                        <div class="portfolio-item">
+                            <div class="item-caption">
+                                <h4>Thom Business Cards</h4>
+                                <p>Branding &amp; Digital</p>
+                            </div>
+                            <div class="item-image">
+                                <img alt="#" src="https://images.unsplash.com/photo-1465414829459-d228b58caf6e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=7ab1744fe016fb39feb2972244246359"
+                                    obj.alt="obj.alt" />
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Portfolio Item -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 image-item" data-groups="[&quot;nature&quot;,&quot;architecture&quot;]">
+        
+                        <div class="portfolio-item">
+                            <div class="item-caption">
+                                <h4>Label Mockup</h4>
+                                <p>Print Category</p>
+                            </div>
+                            <div class="item-image">
+                                <img alt="#" src="https://images.unsplash.com/photo-1416184008836-5486f3e2cf58?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=601&amp;h=676&amp;fit=crop&amp;s=5f1f1ffba05979d4248cc16d8eb82f0a"
+                                    obj.alt="obj.alt" />
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Portfolio Item -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 image-item" data-groups="[&quot;nature&quot;]">
+        
+                        <div class="portfolio-item">
+                            <div class="item-caption">
+                                <h4>Letter Mockup</h4>
+                                <p>Print Category</p>
+                            </div>
+                            <div class="item-image">
+                                <img alt="#" src="https://images.unsplash.com/photo-1478033394151-c931d5a4bdd6?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=57a00aabcfaa1b04fd268ea3ad4a4cbb"
+                                    obj.alt="obj.alt" />
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Portfolio Item -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 image-item" data-groups="[&quot;nature&quot;]">
+        
+                        <div class="portfolio-item">
+                            <div class="item-caption">
+                                <h4>Boxed Cards</h4>
+                                <p>Print Work</p>
+                            </div>
+                            <div class="item-image">
+                                <img alt="#" src="https://images.unsplash.com/photo-1473175494278-d83ed8459089?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1208&amp;h=338&amp;fit=crop&amp;s=fd1cf1e8eddf88ef87015314f85ce3fb"
+                                    obj.alt="obj.alt" />
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Portfolio Item -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 image-item" data-groups="[&quot;nature&quot;]">
+        
+                        <div class="portfolio-item">
+                            <div class="item-caption">
+                                <h4>Thanks Letter</h4>
+                                <p>Branding</p>
+                            </div>
+                            <div class="item-image">
+                                <img alt="product" src="https://images.unsplash.com/photo-1434144893279-2a9fc14e9337?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=d2f930bbb91de7e19e6436f5b03897b0"
+                                    obj.alt="obj.alt" />
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!-- Portfolio Item -->
+                    <div class="col-lg-4 col-md-4 col-sm-6 image-item" data-groups="[&quot;fruit&quot;]">
+        
+                        <div class="portfolio-item">
+                            <div class="item-caption">
+                                <h4>Flying Mac</h4>
+                                <p>Branding</p>
+                            </div>
+                            <div class="item-image">
+                                <img alt="product" src="https://images.unsplash.com/photo-1464454709131-ffd692591ee5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=600&amp;h=338&amp;fit=crop&amp;s=eda14f45e94e9024f854b1e06708c629"
+                                    obj.alt="obj.alt" />
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-lg-4 col-md-4 col-sm-4 my-sizer-element"></div>
+                </div>
+            </div>
+        <h1>Isotope - filtering</h1>
+
+        <div class="text-center">
+        <button data-hover="MACRO"><div><img class="" src="{% static "images/macro1.png" %}" style="width:50px" alt="My image"/></div></button>
+        <button data-hover="AERIAL"><div><img class="" src="{% static "images/drone.png" %}" style="width:50px" alt="My image"/></div></button>
+        <button data-hover="BUILDING"><div><img class="" src="{% static "images/architecture.png" %}" style="width:50px" alt="My image"/></div></button>
+        <button data-hover="LANSCAPE"><div><img class="" src="{% static "images/landscape.png" %}" style="width:50px" alt="My image"/></div></button>
+        <button data-hover="PORTARIT"><div><img class="" src="{% static "images/portrait.png" %}" style="width:50px" alt="My image"/></div></button>
+        <button data-hover="ACTION"><div><img class="" src="{% static "images/sports.png" %}" style="width:50px" alt="My image"/></div></button>
+        <button data-hover="STREET"><div><img class="" src="{% static "images/street.png" %}" style="width:50px" alt="My image"/></div></button>
+        <button data-hover="WILDLIFE"><div><img class="" src="{% static "images/wildlife.png" %}" style="width:50px" alt="My image"/></div></button>
+        </div>
         
 
 
@@ -88,24 +393,43 @@ crossorigin="anonymous">
     
   
     <!-- <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script> -->
-    <!-- <script rel="stylesheet" src="{% static 'js/image_grid.js' %}"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/shufflejs@5"></script>
+    
+    <script rel="stylesheet" src="{% static 'js/image_grid.js' %}"></script>
+  
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script rel="stylesheet" src="{% static 'js/image_filltering.js' %}"></script>
     <!-- <script rel="stylesheet" src="{% static 'js/controls.js' %}"></script> -->
-    <!-- <script>
-            $(function() {
-              var f = $('.filtr-container').filterizr({ controlsSelector: '.fltr-controls' });
-              $('.color-container-1').filterizr({ controlsSelector: '.color-controls-1' });
-              $('.color-container-2').filterizr({ controlsSelector: '.color-controls-2', layout: 'packed' });
-              $('.color-container-3').filterizr({ controlsSelector: '.color-controls-3', layout: 'sameHeight' });
-              $('.color-container-4').filterizr({ controlsSelector: '.color-controls-4', layout: 'packed' });
-              $('.color-container-5').filterizr({ controlsSelector: '.color-controls-5', layout: 'horizontal' });
-              $('.color-container-6').filterizr({ controlsSelector: '.color-controls-6', layout: 'vertical' });
-              window.filterizr = f;
-            });
-          </script>   -->
-    <!-- <script rel="stylesheet" src="{% static 'js/jquery.filterizr-with-jquery.min.js' %}"></script>
-    <script rel="stylesheet" src="{% static 'js/filter.js' %}"></script> -->
+    <script>
+        var Shuffle = window.shuffle;
+        var element = document.getElementById('grid');
+        var sizer = element.querySelector('.my-sizer-element');
+        
+        var shuffle = new Shuffle(element, {
+        itemSelector: '.picture-item',
+        sizer: sizer // could also be a selector: '.my-sizer-element'
+        });
+        // Overrideable options
+        Shuffle.options = {
+        group: Shuffle.ALL_ITEMS, // Initial filter group.
+        speed: 250, // Transition/animation speed (milliseconds).
+        easing: 'ease', // CSS easing function to use.
+        itemSelector: '*', // e.g. '.picture-item'.
+        sizer: null, // Element or selector string. Use an element to determine     the size of columns and gutters.
+        gutterWidth: 0, // A static number or function that tells the plugin how wide the gutters between columns are (in pixels).
+        columnWidth: 0, // A static number or function that returns a number which tells the plugin how wide the columns are (in pixels).
+        delimeter: null, // If your group is not json, and is comma delimeted, you could set delimeter to ','.
+        buffer: 0, // Useful for percentage based heights when they might not always be exactly the same (in pixels).
+        columnThreshold: 0.01, // Reading the width of elements isn't precise enough and can cause columns to jump between values.
+        initialSort: null, // Shuffle can be initialized with a sort object. It is the same object given to the sort method.
+        throttle: throttle, // By default, shuffle will throttle resize events. This can be changed or removed.
+        throttleTime: 300, // How often shuffle can be called on resize (in milliseconds).
+        staggerAmount: 15, // Transition delay offset for each item in milliseconds.
+        staggerAmountMax: 250, // Maximum stagger delay in milliseconds.
+        useTransforms: true, // Whether to use transforms or absolute positioning.
+        };
+        </script>
     {% endblock %}
 </body>
 </html>

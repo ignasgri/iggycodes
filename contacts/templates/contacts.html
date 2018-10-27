@@ -2,13 +2,13 @@
 {% load bootstrap_tags %}
 {% block contact %}
 
-<div class="container">
+<div class="container contact_container">
 <div class="row">
         <div class="col-sm-12 contactform">
             <form class="contact_container" role="form" action="{% url 'contacts' %}" method="POST">
                 {% csrf_token %}
                 {{ form | as_bootstrap }}
-                <button class="btn btn-lg btn-success" type="submit">Submit</button>
+                <button class="get_in_touch_button" type="submit">SEND</button>
             </form>
         </div>
         <div class="col-sm-6 contactform"></div>

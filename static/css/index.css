@@ -1,11 +1,14 @@
 /* RGB */
+h1, h2, h3, h4, h5, h6 {
+  color: #c37752;
+}
+
 .intro_container {
   height: 100vh;
-  background-color: #fad2b6 !important;
 }
 
 nav {
-  background-color: none;
+  height: 65px;
 }
 
 nav .navbar-brand {
@@ -16,6 +19,17 @@ nav .nav-link {
   color: black !important;
 }
 
+.greeting {
+  font-size: 5em;
+  font-weight: 700;
+  text-shadow: -6px -3px 0 #6e6e6e42;
+  color: #fff;
+  text-align: center;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+  opacity: 0.6;
+}
+
 .intro_text {
   height: 500px;
   padding: 50px;
@@ -23,42 +37,37 @@ nav .nav-link {
   text-align: center;
 }
 
-.intro_text .lorum {
-  border: 1px solid #524348;
-  padding: 20px;
-  top: 20%;
-  position: relative;
-  color: #524348;
+.intro_text .iam {
+  padding: 20px 60px;
+  color: gray;
+  font-size: 2.3em;
+  font-weight: 700;
 }
 
-.intro_text h1 {
-  top: 20%;
-  position: relative;
-  color: #a57141;
-  text-transform: uppercase;
-  font-weight: 800;
+.iam_text > p {
+  color: gray;
+  text-align: left;
 }
 
 .intro_image {
-  height: 600px;
-}
-
-.intro_image .intro_face {
-  padding-top: 30px;
-  max-height: 600px;
+  width: 100%;
   margin: auto;
   z-index: 2;
 }
 
 .get_in_touch_button {
   background-color: transparent;
-  border: 3px solid #d44848;
-  padding: 15px;
-  color: #d44848;
+  border: 2px solid gray;
+  padding: 10px 25px;
+  color: gray;
+  cursor: pointer;
 }
-
+.what_i_do_p{
+  height: 120px;
+}
 .lessons_box {
   width: 100%;
+  background-color: #fff;
 }
 
 .index_lessons {
@@ -66,6 +75,13 @@ nav .nav-link {
   padding: 50px;
 }
 
+.form-control {
+  border-radius: 0px !important;
+  border: none !important;
+}
+.contact_container{
+  padding-bottom:60px;
+}
 #lessons {
   overflow: hidden;
   text-align: center;
@@ -79,7 +95,6 @@ nav .nav-link {
 }
 
 #experience {
-  padding-top: 190px;
   overflow: hidden;
   text-align: center;
   text-transform: uppercase;
@@ -89,6 +104,7 @@ nav .nav-link {
   line-height: 0.7;
   z-index: -1;
   color: #fad2b6;
+  text-shadow: 10px 5px 0 #c37752;
 }
 
 #contacts {
@@ -101,46 +117,59 @@ nav .nav-link {
   line-height: 0.7;
   z-index: -1;
   color: #fad2b6;
+  text-shadow: 10px 5px 0 #c37752;
 }
 
 .contact_container {
   max-width: 90%;
   margin: auto;
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 #id_contact_name, #id_contact_email {
-  font-size: 30px;
+  font-size: 14px;
   color: gray;
-  height: 60px;
-  background-color: #C7AC92;
-  border: none;
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid gray !important;
 }
 
 #id_content {
-  font-size: 30px;
+  font-size: 14px;
   color: gray;
-  height: 200px;
-  background-color: #C7AC92;
-  border: none;
+  height: 40px;
+  background-color: transparent;
+  border-bottom: 1px solid gray !important;
 }
 
 #id_contact_name::-webkit-input-placeholder {
-  font-size: 30px;
+  font-size: 12px;
   color: gray;
-  font-weight: 700;
+  padding: 0px;
+}
+
+textarea#id_contact_name.form-control {
+  padding-left: 0px;
+}
+
+textarea#id_contact_email.form-control {
+  padding-left: 0px;
+}
+
+textarea#id_content.form-control {
+  padding-left: 0px;
 }
 
 #id_contact_email::-webkit-input-placeholder {
-  font-size: 30px;
+  font-size: 12px;
   color: gray;
-  font-weight: 700;
+  padding-left: 0px;
 }
 
 #id_content::-webkit-input-placeholder {
-  font-size: 30px;
+  font-size: 12px;
   color: gray;
-  font-weight: 700;
+  padding-left: 0px;
 }
 
 .control-label {
@@ -204,11 +233,6 @@ nav .nav-link {
   height: 100px;
 }
 
-.box {
-  background-color: #fad2b6;
-  margin-top: -10px;
-}
-
 .work_tag {
   width: 100%;
   height: 200px;
@@ -261,25 +285,59 @@ h4 {
   margin-bottom: 1rem;
 }
 
+div.exp_tags {
+  position: relative;
+  top: 30px;
+  padding-left: 10px;
+  color: #fff;
+  margin-bottom: 0px !important;
+}
+
 #htmlbar {
-  margin: 20px 0;
   height: 40px;
 }
 
 #cssbar {
-  margin: 20px 0;
+  height: 40px;
+}
+
+#jqbar {
   height: 40px;
 }
 
 #jsbar {
-  margin: 20px 0;
   height: 40px;
 }
 
 #pythonbar {
-  margin: 20px 0;
   height: 40px;
 }
 
+#djangobar {
+  height: 40px;
+}
 
+#wordpressbar {
+  height: 40px;
+}
+
+.contact_side_bar {
+  padding-top: 15%;
+}
+
+.contact_side_bar li {
+  list-style: none;
+  font-size: 12px;
+  padding-top: 1em;
+  color: gray;
+}
+
+.contact_side_bar li contact_side_bar_details {
+  padding: 0.2em;
+}
+
+.image_design_dev {
+  width: 100px;
+  margin: 20px;
+}
 /*# sourceMappingURL=index.css.map */

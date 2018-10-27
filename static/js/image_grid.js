@@ -1,14 +1,16 @@
-// external js: isotope.pkgd.js, imagesloaded.pkgd.js
+var Shuffle = window.Shuffle;
 
-// init Isotope
-var $grid = $('.grid').isotope({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  masonry: {
-    columnWidth: '.grid-sizer'
+var myShuffle = new Shuffle(document.querySelector('.my-shuffle'), {
+  itemSelector: '.image-item',
+  sizer: '.my-sizer-element',
+  buffer: 1,
+});
+
+window.jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+  var input = evt.currentTarget;
+  if (input.checked) {
+    myShuffle.filter(input.value);
   }
 });
-// layout Isotope after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
-});  
+
+
