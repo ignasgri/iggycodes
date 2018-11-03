@@ -9,3 +9,9 @@ def index(request):
 
 def shop(request):
     return render(request, "shop.html")
+
+def projects(request):
+    return render(request, "projects.html")
+
+def aboutme(request):
+    return render(request, "aboutme.html")

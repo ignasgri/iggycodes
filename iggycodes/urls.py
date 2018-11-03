@@ -1,7 +1,7 @@
 from django.conf.urls import include, url
 from rest_framework import routers
 from django.contrib import admin
-from home.views import index, shop
+from home.views import index, shop, projects, aboutme
 from django.views.static import serve
 from django.views import static
 '''not sure about one bellow'''
@@ -36,6 +36,8 @@ urlpatterns = [
     url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT}),
     url(r'accounts/', include(accounts_urls)),
     url(r'blog/', include(blog_urls)),
+    url(r'^projects$', projects, name='projects'),
+    url(r'^aboutme$', aboutme, name='aboutme'),
     url(r'^shop$', shop, name='shop'),
     url(r'^shop/cart/', include(shop_cart_urls)),
     url(r'^shop/categories/', include(shop_categories_urls)),
