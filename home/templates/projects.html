@@ -2,9 +2,10 @@
 {% load staticfiles %}
 {% block content %}
 <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{% static "css/carousel.css" %}">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="{% static "css/carousel.css" %}"> -->
     <link rel="stylesheet" href="{% static "css/projects.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     <!-- <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}"> -->
     
 </head>
@@ -12,64 +13,53 @@
     <div class="row">
         <div class="col-ms-12">
             <p class="project_title">This is my projects</p>
+            <div class="iam_text">
+                    <i class="far fa-ruler-horizontal"></i>
+                    <p class="intro">IGNAS GRIGARAVICIUS — Web and User Interface designer focusing on UX & simplicity.</p>
+                <p>I design unique and functional web pages including eccomerce shop. In a past year I’ve worked on my own projects to build portfolio and improve my skills and learn new techniques.</p>
+            </div>
         </div>
     </div>
 </div>
+
+
+
+
+
 <div class="container slides">
     <div class="row">
-        <div class="col-sm-9 ">
-                <div class="trent-slider">
-                        <div class="t-slide current-t-slide">
-                        <img class="intro_image" src="{% static "images/laptop-screen.png" %}" alt="My image"/>
-
-                        </div>
-                        <div class="t-slide">
-                          <img src="https://picsum.photos/1800/900?image=838" style="height:100%" alt="" />
-                        </div>
-                        <div class="t-slide">
-                          <img src="https://picsum.photos/1800/900?image=841" alt="" />
-                        </div>
-                        <div class="t-slide">
-                          <img src="https://picsum.photos/1800/900?image=839" alt="" />
-                        </div>
-                            <div class="t-slide">
-                          <img src="https://picsum.photos/1800/900?image=821" alt="" />
-                        </div>
-                        <div class="t-slider-controls">
-                          <div class="arrow right-arrow">
-                            <div class="arrow-container">
-                              <div class="arrow-icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-                            </div>
-                          </div>
-                          <div class="arrow left-arrow">
-                            <div class="arrow-container">
-                              <div class="arrow-icon"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-                            </div>
-                          </div>
-                          <div class="t-load-bar">
-                            <div class="inner-load-bar"></div>
-                          </div>
-                          <div class="t-dots-container">
-                            <div class="t-slide-dots-wrap">
-                              <div class="t-slide-dots">
-                      
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      
-                </div>
+        <div class="col-sm-10 ">
+               
+<div class="swiper-container s2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="{% static "images/project_itfix.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
+          <div class="swiper-slide"><img src="{% static "images/project_1plus.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
+          <div class="swiper-slide"><img src="{% static "images/project_shop.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
+          <div class="swiper-slide"><img src="{% static "images/project_quiz.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
         </div>
-        <div class="col-sm-3">
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+        </div>
+        <div class="col-sm-2">
             Project description
         </div>
     </div>
 </div>
 
 <footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 
+<script rel="stylesheet" src="{% static 'js/swiper.js' %}"></script> 
 
-<script rel="stylesheet" src="{% static 'js/carousel.js' %}"></script> 
 
 </footer>
 {% endblock %}

@@ -1,17 +1,20 @@
 
 {% load bootstrap_tags %}
+{% load staticfiles%}
 {% block contact %}
 
-<div class="container contact_container">
-<div class="row">
+<!-- <div class="contact_container"> -->
+<!-- <div class="row"> -->
         <div class="col-sm-12 contactform">
             <form class="contact_container" role="form" action="{% url 'contacts' %}" method="POST">
                 {% csrf_token %}
                 {{ form | as_bootstrap }}
-                <button class="get_in_touch_button" type="submit">SEND</button>
+                                               
+
+                <button class="get_in_touch_button" type="submit"><img class="image_design_dev" src="{% static "images/svg/envelope.svg" %}" style="width:20px;color:gray;" alt="My image"/> Send message</button>
             </form>
         </div>
-        <div class="col-sm-6 contactform"></div>
-</div>
-</div>
+        <!-- <div class="col-sm-6 contactform"></div> -->
+<!-- </div> -->
+<!-- </div> -->
 {% endblock contact %}

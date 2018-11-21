@@ -4,6 +4,17 @@ html, body{
   padding: 0;
 }
 body{
+    /* background-image:    url(../images/man.png);
+    height: 100vh;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background: linear-gradient(
+      to bottom,
+      white, 
+      transparent
+    ); */
+    /* background-position: center center;               */
+    /* optional, center the image */
   background-image: url("../images/lines.png");
   background-attachment: fixed;
   display: block;
@@ -12,12 +23,15 @@ body{
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 10;
   background-color: hsla(0,0%,100%,0.95);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
 }
 
+.wrapper{
+  padding: 0 30px;
+}
 .navbar-brand{
     font-weight: 600;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -29,8 +43,12 @@ body{
     animation: 
     typing 1s steps(10, end),
     blink-caret .60s step-end infinite;
+    padding-right: 150px;
   }
-  
+  .ml-auto, .mx-auto{
+    margin-left: 0px!important;
+    /* position: fixed; */
+  }
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }

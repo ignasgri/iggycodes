@@ -4,6 +4,7 @@
 
 
 {% block content %}
+<img class="man_image" src="{% static "images/man.png" %}" alt="My image"/>
 
 <!-- <section>
         <div class="lessons_box">
@@ -12,24 +13,28 @@
         </section> -->
         <section>
             <div class="intro_container">
+                
                 <div class="container">
                 <div class="row" style="margin-right:0px; height:100vh;">
-                    <div class="col-sm-5 intro_text">
-                            <h1 class="greeting text-left" style="padding:20px 0;" >ABOUT ME</h1>
+                    <div class="col-sm-7 intro_text">
+                            <h1 class="greeting text-left" style="padding:20px 0;" >WELCOME</h1>
                         <div class="iam_text">
                                 <i class="far fa-ruler-horizontal"></i>
-                            <p>Hi, my name is <span style="font-size:1.4em;color:#635454d9;">IGNAS GRIGARAVICIUS</span>. I'am a freelancer and web developer & designer in Dublin, Ireland. I’ve been working on websites and delivering online marketing campaigns in agencies and in-house since 2007, and as a commercially-focused freelancer since 2014.</p>
+                                <p class="intro">IGNAS GRIGARAVICIUS — Web and User Interface designer focusing on UX & simplicity.</p>
+                            <p>I design unique and functional web pages including eccomerce shop. In a past year I’ve worked on my own projects to build portfolio and improve my skills and learn new techniques.</p>
                         </div>
                         <div class="button_align text-left">
-                        <button class="get_in_touch_button">FIND OUT MORE</button>
+                            <a style="font-size: 1.2em;font-weight:900;color:#0f141e;text-decoration:none;" href="/projects">View Projects </a> or <a style="font-size: 1.2em;font-weight:900;color:#0f141e;text-decoration:none;" href="/aboutme"> Read About Me</a>
+                        <!-- <button class="get_in_touch_button">Read about me</button> -->
                         </div>
                     </div>
-                    <div class="col-sm-7">
-                        <img class="intro_image" src="{% static "images/image2.png" %}" alt="My image"/>
+                    <div class="col-sm-5">
+                        <!-- <img class="intro_image" src="{% static "images/image2.png" %}" alt="My image"/> -->
                     </div>
                 </div>
             </div>
         </div>
+
         </section>
 
 
@@ -37,9 +42,15 @@
         <section>
                 <!-- <div class="container"> -->
                     <div class="lines_background">
+                        <div class="wrapper">
                 <div class="box">
                     <div class="container">
-                            <h1 class="greeting text-left" style="padding:50px 0;" >WHAT I DO</h1>
+                            <h1 class="greeting text-left" style="padding:20px 0;" >WHAT I DO</h1>
+                            <div class="iam_text">
+                                    <i class="far fa-ruler-horizontal"></i>
+                                    <p class="intro">IGNAS GRIGARAVICIUS — Web and User Interface designer focusing on UX & simplicity.</p>
+                                <p style="padding-bottom:50px;">I design unique and functional web pages including eccomerce shop. In a past year I’ve worked on my own projects to build portfolio and improve my skills and learn new techniques.</p>
+                            </div>
                                                         
 
 
@@ -51,7 +62,7 @@
                                 <h6 class="text-center" style="padding:10px 0;border-bottom:1px solid #aaa">IDEA</h6>
                                 <p class="text-left what_i_do_p">Mauris in euismod ante. In accumsan orci sed turpis blandit elementum.
                                      Vestibulum...</p>
-                                     <button type="button" class="get_in_touch_button">MORE</button>
+                                     <!-- <button type="button" class="get_in_touch_button">MORE</button> -->
                                 
                                         
                                         </div>
@@ -60,7 +71,7 @@
                                 <h6 style="padding:10px;border-bottom:1px solid #aaa">SKETCH</h6>
                                 <p class="text-left what_i_do_p">Mauris in euismod ante. In accumsan orci sed turpis 
                                     blandit elementum. Vestibulum...</p>
-                                    <button type="button" class="get_in_touch_button">MORE</button>
+                                    <!-- <button type="button" class="get_in_touch_button">MORE</button> -->
                             </div>
                             
                             <div class="col-sm">
@@ -69,7 +80,7 @@
                                     <h6 style="padding:10px;border-bottom:1px solid #aaa">DESIGN</h6>
                                     <p class="text-left what_i_do_p">To help you achieve a clear picture of your 
                                         business and website you're confident...</p> 
-                                        <button type="button" class="get_in_touch_button">MORE</button>
+                                        <!-- <button type="button" class="get_in_touch_button">MORE</button> -->
                                         <!-- to show off. I make your 
                                         website look current and totally authentic - with beautiful 
                                         typography, lots of white space and design that complements your brand. -->
@@ -81,7 +92,7 @@
                                         <h6 style="padding:10px;border-bottom:1px solid #aaa">DEVELOPMENT</h6>
                                         <p class="text-left what_i_do_p">To ensure a boautiful, easy-to-use website with 
                                             a positive user experience, I bring your... </p>
-                                            <button type="button" class="get_in_touch_button">MORE</button>
+                                            <!-- <button type="button" class="get_in_touch_button">MORE</button> -->
                                             <!-- design (or mine) to life 
                                             with the latest coding standards in WordPress, responsive design, 
                                             and front-end development including HTML, CSS3/ SASS, PHP, JavaScript. -->
@@ -93,12 +104,13 @@
                                         <h6 style="padding:10px;border-bottom:1px solid #aaa">MAINTENANCE</h6>
                                         <p class="text-left what_i_do_p">Mauris in euismod ante. In accumsan orci sed turpis 
                                             blandit elementum. Vestibulum...</p>
-                                            <button type="button" class="get_in_touch_button">MORE</button>
+                                            <!-- <button type="button" class="get_in_touch_button">MORE</button> -->
                                         
                                         
                                     </div>
                         </div>
                         </div>
+                    </div>
                 </section>
 
 
@@ -121,24 +133,34 @@
 
 
             <section>
-                    
+                    <div class="wrapper">
                     <div class="box">
                     <div class="container">
-                        <h1 class="greeting text-left" style="padding-top:150px;">CONTACT ME</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium aspernatur porro dolore voluptates voluptatem assumenda commodi minima hic! Totam labore voluptatibus optio itaque perspiciatis fugiat enim laborum autem explicabo?
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi et consectetur libero laboriosam pariatur temporibus, quaerat dolore eveniet, illum veritatis perspiciatis saepe assumenda architecto ab odio a cumque aspernatur eum!</p>
+                        <h1 class="greeting text-left" style="padding:150px 0 20px 0;">CONTACT ME</h1>
+                        
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6 text-left">
+                        
+                        <h3>Get in touch — let's work together.</h3>
         
-        
+        </div>
+        <div class="col-xs-12 col-md-6 text-left">
+              
+        <p>Got a project? Drop me a line if you want to work together on something exciting. Big or small. Mobile or web.</p>
+        <p>I will get back to you as soon as possible.</p>
+
+</div>
+    </div>
         
                             <div class="row">
                                     <div class="col-sm-6 text-left">
                                                     <ul class="contact_side_bar">
                                                         <li>LOCATION: </li>
-                                                        <li>Royal Canal Park, Dublin, Ireland</li>
+                                                        <li style="font-size:1.375rem;">Royal Canal Park, Dublin, Ireland</li>
                                                         <li>EMAIL: </li>
-                                                        <li>contact@iggycodes.com</li>
+                                                        <li style="font-size:1.375rem;">contact@iggycodes.com</li>
                                                         <li>PHONE NUMBER: </li>
-                                                        <li>(+353) 87 7433 324</li>
+                                                        <li style="font-size:1.375rem;">(+353) 87 7433 324</li>
                                                        
                                                     </ul>
                                     </div>
@@ -148,7 +170,7 @@
                                 </div>
                    
             
-                    </div></div>
+                    </div></div></div>
                 </section>
 
 <!-- <section>

@@ -39,6 +39,12 @@ button:before{
     transition: all .3s ease-in-out;
   }
 /* default styles so shuffle doesn't have to set them (it will if they're missing) */
+.wrapper{
+    padding: 0 30px;
+  }
+  .row{
+      margin: 0!important;
+  }
 .my-shuffle {
     position: relative;
     overflow: hidden;
