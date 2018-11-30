@@ -18,12 +18,8 @@ nav .nav-link {
 .greeting {
   font-size: 4em;
   font-weight: 700;
-  text-shadow: -6px -3px 0 #6e6e6e42;
-  color: #fff;
+  color: #c87e7e;
   text-align: center;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: black;
-  opacity: 0.6;
 }
 
 .intro_text {
@@ -155,6 +151,7 @@ nav .nav-link {
 .contact_container {
   margin: auto;
   padding-top: 1rem;
+  padding-bottom: 20%;
 }
 
 #id_contact_name, #id_contact_email {

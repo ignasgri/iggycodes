@@ -6,10 +6,13 @@
     <!-- <link rel="stylesheet" href="{% static "css/carousel.css" %}"> -->
     <link rel="stylesheet" href="{% static "css/projects.css" %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    
     <!-- <link rel="stylesheet" href="{% static "css/owl.theme.default.min.css" %}"> -->
     
 </head>
 <div class="container">
+<div class="container">
+    <!-- <div class="wrapper"> -->
     <div class="row">
         <div class="col-ms-12">
             <p class="project_title">This is my projects</p>
@@ -20,37 +23,63 @@
             </div>
         </div>
     </div>
+    <!-- </div> -->
 </div>
-
+</div>
 
 
 
 
 <div class="container slides">
     <div class="row">
-        <div class="col-sm-10 ">
-               
-<div class="swiper-container s2">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="{% static "images/project_itfix.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
-          <div class="swiper-slide"><img src="{% static "images/project_1plus.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
-          <div class="swiper-slide"><img src="{% static "images/project_shop.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
-          <div class="swiper-slide"><img src="{% static "images/project_quiz.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-
-
+        <div class="col-sm-10 ">    
+            <div class="swiper-container s2">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="{% static "images/project_itfix.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
+                    <div class="swiper-slide"><img src="{% static "images/project_1plus.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
+                    <div class="swiper-slide"><img src="{% static "images/project_shop.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
+                    <div class="swiper-slide"><img src="{% static "images/project_quiz.png" %}" style="width:100%; padding:40px;"alt="My image"/></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+            </div>
         </div>
         <div class="col-sm-2">
-            Project description
+            <div class="swiper-container description_slid">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide single_slides">
+                        <div class="projects_name">It fix</div>
+                        <div class="projects_description">Lorem Ipsum is simply dummy text of the printing 
+                            and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took a galley of type and 
+                            scrambled it to make a type specimen book.</div>
+                        <div class="project_icons">
+                                <img src="{% static "images/svg/html5.svg" %}" style="width:15%; "alt="My image"/>
+                                <img src="{% static "images/svg/css3-alt.svg" %}" style="width:15%; "alt="My image"/>
+                                <img src="{% static "images/svg/js.svg" %}" style="width:17%;"alt="My image"/>
+                                <img src="{% static "images/svg/python.svg" %}" style="width:17%;"alt="My image"/>
+                        </div>
+                        <div class="project_button"><a class="project_button" href="/projects">More</a></div>
+
+                    </div>
+                    <div class="swiper-slide single_slides">
+                            <div class="projects_name">1 PLUS EVENTS</div>
+                            <div class="projects_description">Blah Blah</div>
+                    </div>
+                    <div class="swiper-slide single_slides">
+                            <div class="projects_name"></div>
+                            <div class="projects_description"></div>
+                    </div>
+                    <div class="swiper-slide single_slides">
+                            <div class="projects_name"></div>
+                            <div class="projects_description"></div>
+                    </div>
+                    <div class="swiper-slide single_slides">
+                            <div class="projects_name"></div>
+                            <div class="projects_description"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

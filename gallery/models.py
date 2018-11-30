@@ -14,8 +14,21 @@ categories_list = (
     ('street', 'Street'),
     ('wildlife', 'Wildlife'),
 )
+format_list = (
+    ('16x9', 'Lanscape Mode'),
+    ('4x3', 'Portrait Mode'),
+    ('32x9', 'Panorama'),
+)
+
+grid = (
+    ('4', 'Lanscape Mode'),
+    ('2', 'Portrait Mode'),
+    ('8', 'Panorama'),
+)
 class Photo(models.Model):
     categories_list = models.CharField(max_length=14, choices=categories_list, default='')
+    format_list = models.CharField(max_length=14, choices=format_list, default='')
+    grid = models.CharField(max_length=14, choices=grid, default='')
     name = models.CharField(max_length=254, default='')    
     image = models.ImageField(upload_to='images', default='images/default.jpg', blank=True, null=True)
     description = models.TextField()
